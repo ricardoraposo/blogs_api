@@ -34,10 +34,10 @@ func VerifyToken(tokenStr string) (jwt.MapClaims, error) {
 		return nil, fmt.Errorf("Invalid token")
 	}
 
-	claims, ok := token.Claims.(jwt.MapClaims)
-	if !ok {
+	if claims, ok := token.Claims.(jwt.MapClaims); !ok {
 		return nil, fmt.Errorf("Invalid token")
+	} else {
+		return claims, nil
 	}
 
-	return claims, nil
 }
