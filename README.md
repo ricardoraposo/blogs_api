@@ -1,6 +1,7 @@
-# Project gochi
+# Blogs Api
 
-One Paragraph of project description goes here
+Blog api project made with Go and Chi.
+This is an adaptation of an exercise project I've done while studying on Trybe, but made using go and chi router.
 
 ## Getting Started
 
